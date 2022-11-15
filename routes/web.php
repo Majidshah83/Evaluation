@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterControler;
+use App\Http\Controllers\CompanyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +21,4 @@ Route::get('dashboard', [LoginController::class, 'dashboard'])->middleware(['aut
 route::post('registerUser',[RegisterControler::class,'registerUser'])->name('registerUser');
 Route::get('account/verify/{token}', [RegisterControler::class, 'verifyAccount'])->name('user.verify');
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('getCompnayList', [CompanyController::class, 'getCompnayList'])->name('getCompnayList');
