@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\LoginRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 class LoginController extends Controller
 {
     public function login()
@@ -19,7 +20,21 @@ class LoginController extends Controller
             return redirect()->intended('dashboard')
                         ->withSuccess('You have Successfully loggedin');
         }
- return redirect()->back()->with('message', 'Oppes! You have entered invalid credentials');
-       
+        return redirect()->route('login')->with('message', 'Oppes! You have entered invalid credentials');
+
+
+    }
+    public function dashboard()
+    {
+         if(Auth::check()){
+            return view('layouts.dashboard');
+        }
+ return redirect()->route('login')->with('message', 'Opps! You do not have access');
+
+    }
+    public function logout() {
+        Session::flush();
+        Auth::logout();
+        return Redirect('login');
     }
 }
