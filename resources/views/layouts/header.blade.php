@@ -101,6 +101,7 @@
 
 
                         </div>
+                         <div class="font-medium">{{ucfirst(Auth::user()->name)}}</div>
                         <div class="dropdown-menu w-56">
                             <ul class="dropdown-content bg-primary text-white">
                                 <li class="p-2">

@@ -22,7 +22,7 @@
 						<line x1="12" y1="22.08" x2="12" y2="12"></line>
 					</svg>
 				</div>
-				<div class="side-menu__title"> Posts
+				<div class="side-menu__title"> Company
 					<div class="side-menu__sub-icon">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="chevron-down" data-lucide="chevron-down" class="lucide lucide-chevron-down">
 							<polyline points="6 9 12 15 18 9"></polyline>
@@ -38,10 +38,10 @@
 								<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
 							</svg>
 						</div>
-						<div class="side-menu__title"> All Post </div>
+						<div class="side-menu__title"> Companies List </div>
 					</a>
 				</li>
-				
+
 
 			</ul>
 
