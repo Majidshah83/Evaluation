@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterControler;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,3 +14,4 @@ use App\Http\Controllers\LoginController;
 |
 */
 route::get('login',[LoginController::class,'login'])->name('login');
+route::get('register',[RegisterControler::class,'register'])->name('register');
