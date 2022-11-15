@@ -14,6 +14,8 @@ use App\Http\Controllers\RegisterControler;
 |
 */
 route::get('login',[LoginController::class,'login'])->name('login');
+route::post('loginUser',[LoginController::class,'loginUser'])->name('loginUser');
 route::get('register',[RegisterControler::class,'register'])->name('register');
+
 route::post('registerUser',[RegisterControler::class,'registerUser'])->name('registerUser');
 Route::get('account/verify/{token}', [RegisterControler::class, 'verifyAccount'])->name('user.verify');
